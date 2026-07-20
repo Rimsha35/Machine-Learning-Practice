@@ -3,7 +3,7 @@
 <p align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge&logo=scikitlearn)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?style=for-the-badge&logo=scikitlearn)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-black?style=for-the-badge&logo=pandas)
 ![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-blue?style=for-the-badge&logo=numpy)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-blue?style=for-the-badge)
@@ -16,24 +16,38 @@
 
 # 📖 Overview
 
-This repository documents my **Machine Learning learning journey**, covering theoretical concepts, mathematical intuition, practical implementations, and hands-on projects.
+This repository documents my **Machine Learning journey**, where I learn the theory, mathematics, implementation, and practical applications of Machine Learning algorithms using Python and Scikit-Learn.
 
-The goal is to build a strong understanding of Machine Learning algorithms from the ground up while applying them to real-world datasets using Python and Scikit-learn.
+The repository contains detailed notebooks, theory notes, algorithm implementations, evaluation techniques, and real-world projects covering supervised learning, ensemble learning, and future deep learning topics.
 
-The repository is continuously updated as I learn new algorithms, complete projects, and improve my Machine Learning skills.
+Every project follows a complete Machine Learning workflow including:
+
+- Data Collection
+- Exploratory Data Analysis (EDA)
+- Data Preprocessing
+- Feature Engineering
+- Model Building
+- Hyperparameter Tuning
+- Model Evaluation
+- Performance Comparison
+- Model Saving
+
+The repository is continuously updated as I learn new Machine Learning algorithms and build more advanced projects.
 
 ---
 
 # 🎯 Learning Objectives
 
-- Learn Machine Learning fundamentals
-- Understand the mathematical intuition behind ML algorithms
-- Implement models using Scikit-Learn
+- Build strong Machine Learning fundamentals
+- Understand mathematical intuition behind algorithms
+- Learn Scikit-Learn professionally
 - Perform Exploratory Data Analysis (EDA)
+- Handle missing values and outliers
+- Apply Feature Engineering techniques
+- Optimize models using Hyperparameter Tuning
+- Evaluate models using appropriate metrics
 - Build end-to-end Machine Learning projects
-- Improve Feature Engineering skills
-- Evaluate and optimize model performance
-- Document the learning process professionally
+- Create a professional AI & Machine Learning portfolio
 
 ---
 
@@ -45,6 +59,7 @@ Machine-Learning/
 ├── Data/
 │   ├── advertising.csv
 │   ├── heart.csv
+│   ├── insurance_regression.csv
 │   └── Breast Cancer Wisconsin (Diagnostic) Data Set.csv
 │
 ├── Linear-Regression/
@@ -60,15 +75,25 @@ Machine-Learning/
 │
 ├── Decision-Tree/
 │   ├── Decision-Tree-Classifier.ipynb
+│   ├── Decision-Tree-Regressor.ipynb
+│   └── README.md
+│
+├── Random-Forest/
+│   ├── Random-Forest-Classifier.ipynb
+│   ├── README.md
+│   └── random_forest_fraud.pkl
+│
+├── Ensembles-Learning/
+│   ├── Ensemble-Learning.ipynb
 │   └── README.md
 │
 ├── Mini-Projects/
 │   ├── Advertising-Sales-Prediction.ipynb
 │   ├── House-Price-Prediction.ipynb
-│   └── Linear-Regression-Model.ipynb
+│   └── Insurance-Medical-Charges-Prediction.ipynb
 │
-├── README.md
-└── requirements.txt
+├── requirements.txt
+└── README.md
 ```
 
 ---
@@ -77,9 +102,11 @@ Machine-Learning/
 
 ## 📈 Regression
 
-- ✅ Linear Regression
-- ✅ Multiple Linear Regression
-- ✅ Polynomial Regression
+- Linear Regression
+- Multiple Linear Regression
+- Polynomial Regression
+- Regression Evaluation Metrics
+- Regularization Concepts
 
 ---
 
@@ -95,24 +122,42 @@ Machine-Learning/
 - Precision
 - Recall
 - F1-Score
-- ROC Curve & AUC
-- Classification Report
-- Breast Cancer Classification
+- ROC Curve
+- ROC-AUC
 
 ---
 
 ### Decision Tree
 
 - Decision Tree Classifier
-- Gini Impurity
+- Decision Tree Regressor
 - Entropy
+- Gini Impurity
 - Information Gain
-- Tree Visualization
 - Feature Importance
+- Tree Visualization
 - Cross Validation
-- Model Evaluation
 - Overfitting
-- Pre-Pruning & Post-Pruning
+- Pre-Pruning
+- Post-Pruning
+
+---
+
+### Random Forest
+
+- Ensemble Learning
+- Bootstrap Sampling
+- Bagging
+- Random Feature Selection
+- Voting Mechanism
+- Out-of-Bag (OOB) Score
+- Hyperparameter Tuning
+- GridSearchCV
+- Stratified K-Fold Cross Validation
+- SMOTE
+- Threshold Tuning
+- Feature Importance
+- Model Serialization
 
 ---
 
@@ -120,10 +165,12 @@ Machine-Learning/
 
 - Data Cleaning
 - Missing Value Handling
+- Encoding Techniques
 - Feature Engineering
-- Data Visualization
+- Feature Scaling
 - Correlation Analysis
 - Outlier Detection
+- Data Visualization
 
 ---
 
@@ -142,10 +189,12 @@ Machine-Learning/
 - Precision
 - Recall
 - F1-Score
-- Confusion Matrix
-- Cross Validation
 - ROC Curve
 - ROC-AUC
+- Precision-Recall Curve
+- Confusion Matrix
+- Cross Validation
+- Classification Report
 
 ---
 
@@ -153,46 +202,47 @@ Machine-Learning/
 
 ## 📈 Advertising Sales Prediction
 
-Built a Linear Regression model to predict product sales based on advertising expenditure.
+Predict product sales based on advertising expenditure using Linear Regression.
 
 ### Skills
 
+- EDA
 - Data Cleaning
-- Exploratory Data Analysis (EDA)
 - Feature Engineering
 - Linear Regression
 - Model Evaluation
-- Data Visualization
 
 ---
 
-## 🏠 House Price Prediction
+## 🏠 Insurance Medical Charges Prediction
 
-Developed a regression model to predict house prices using housing features.
+Built regression models to estimate insurance medical charges.
+
+### Algorithms
+
+- Linear Regression
+- Polynomial Regression
+- Decision Tree Regressor
 
 ### Skills
 
-- Data Preprocessing
 - Regression Analysis
 - Feature Engineering
+- Outlier Analysis
 - Model Evaluation
 
 ---
 
 ## 🌸 Iris Flower Classification
 
-Implemented a Decision Tree Classifier using the Iris dataset.
+Implemented a Decision Tree Classifier on the Iris dataset.
 
 ### Skills
 
-- Decision Tree Classifier
-- Gini Impurity
-- Entropy
-- Information Gain
+- Decision Tree
 - Cross Validation
-- Decision Tree Visualization
 - Feature Importance
-- Model Evaluation
+- Visualization
 
 ### Performance
 
@@ -200,24 +250,20 @@ Implemented a Decision Tree Classifier using the Iris dataset.
 |---------|------:|
 | Train Accuracy | **100%** |
 | Test Accuracy | **100%** |
-| 5-Fold Cross Validation | **95.33%** |
+| Cross Validation | **95.33%** |
 
 ---
 
 ## 🩺 Breast Cancer Classification
 
-Built a Logistic Regression model using the Breast Cancer Wisconsin (Diagnostic) dataset.
+Implemented Logistic Regression for breast cancer diagnosis.
 
 ### Skills
 
 - Logistic Regression
 - Binary Classification
-- Confusion Matrix
-- Classification Report
-- Precision
-- Recall
-- F1-Score
 - ROC Curve
+- Classification Report
 - Model Evaluation
 
 ### Performance
@@ -231,6 +277,45 @@ Built a Logistic Regression model using the Breast Cancer Wisconsin (Diagnostic)
 
 ---
 
+## 💳 Credit Card Fraud Detection
+
+Developed a complete fraud detection pipeline using a **Random Forest Classifier** on an imbalanced dataset.
+
+### Techniques Used
+
+- Exploratory Data Analysis
+- Data Preprocessing
+- SMOTE
+- Pipeline
+- Random Forest
+- Hyperparameter Tuning
+- GridSearchCV
+- Stratified K-Fold Cross Validation
+- Threshold Tuning
+- Feature Importance
+- Model Serialization (Joblib)
+
+### Best Hyperparameters
+
+```python
+RandomForestClassifier(
+    n_estimators=200,
+    max_depth=10,
+    min_samples_split=2
+)
+```
+
+### Performance
+
+| Metric | Score |
+|---------|------:|
+| Precision | **72%** |
+| Recall | **77%** |
+| F1-Score | **74%** |
+| Cross Validation Recall | **83.6%** |
+
+---
+
 # 🛠️ Technologies Used
 
 - Python
@@ -238,7 +323,25 @@ Built a Logistic Regression model using the Breast Cancer Wisconsin (Diagnostic)
 - Pandas
 - Matplotlib
 - Scikit-Learn
+- Imbalanced-Learn
+- Joblib
 - Jupyter Notebook
+
+---
+
+# 📂 Datasets
+
+Small datasets are included in this repository.
+
+Large datasets are **not included** because of GitHub's file size limitations.
+
+### Credit Card Fraud Detection
+
+Download the dataset from:
+
+https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
+Place the downloaded dataset inside the `Data/` folder before running the notebook.
 
 ---
 
@@ -251,10 +354,12 @@ Built a Logistic Regression model using the Breast Cancer Wisconsin (Diagnostic)
 - ✅ Polynomial Regression
 - ✅ Logistic Regression
 - ✅ Decision Tree
-- 🔜 Random Forest
+- ✅ Random Forest
 - 🔜 Support Vector Machine (SVM)
 - 🔜 K-Nearest Neighbors (KNN)
 - 🔜 Naive Bayes
+- 🔜 AdaBoost
+- 🔜 Gradient Boosting
 - 🔜 XGBoost
 - 🔜 LightGBM
 - 🔜 CatBoost
@@ -266,17 +371,53 @@ Built a Logistic Regression model using the Breast Cancer Wisconsin (Diagnostic)
 - 🔜 K-Means Clustering
 - 🔜 Hierarchical Clustering
 - 🔜 DBSCAN
-- 🔜 Principal Component Analysis (PCA)
+- 🔜 PCA
 
 ---
 
-## Advanced Topics
+## Deep Learning
 
-- 🔜 Deep Learning
-- 🔜 Natural Language Processing (NLP)
-- 🔜 Computer Vision
-- 🔜 MLOps
-- 🔜 LLM Applications
+- 🔜 Artificial Neural Networks
+- 🔜 CNN
+- 🔜 RNN
+- 🔜 LSTM
+- 🔜 Autoencoders
+
+---
+
+## Generative AI
+
+- 🔜 Transformers
+- 🔜 Hugging Face
+- 🔜 Large Language Models (LLMs)
+- 🔜 Retrieval-Augmented Generation (RAG)
+- 🔜 AI Agents
+
+---
+
+# 📈 Repository Progress
+
+| Module | Status |
+|-----------------------------------------|-------------|
+| Linear Regression | ✅ Completed |
+| Multiple Linear Regression | ✅ Completed |
+| Polynomial Regression | ✅ Completed |
+| Logistic Regression | ✅ Completed |
+| Decision Tree Classifier | ✅ Completed |
+| Decision Tree Regressor | ✅ Completed |
+| Ensemble Learning | ✅ Completed |
+| Random Forest Classifier | ✅ Completed |
+| Support Vector Machine | 🔜 Planned |
+| K-Nearest Neighbors | 🔜 Planned |
+| Naive Bayes | 🔜 Planned |
+| AdaBoost | 🔜 Planned |
+| Gradient Boosting | 🔜 Planned |
+| XGBoost | 🔜 Planned |
+| LightGBM | 🔜 Planned |
+| CatBoost | 🔜 Planned |
+| Clustering | 🔜 Planned |
+| Deep Learning | 🔜 Planned |
+| Generative AI | 🔜 Planned |
 
 ---
 
@@ -308,40 +449,28 @@ jupyter notebook
 
 ---
 
-# 📈 Repository Progress
-
-| Module | Status |
-|-------------------------------|-------------|
-| Linear Regression | ✅ Completed |
-| Multiple Linear Regression | ✅ Completed |
-| Polynomial Regression | ✅ Completed |
-| Logistic Regression | ✅ Completed |
-| Decision Tree Classifier | ✅ Completed |
-| Random Forest | 🔜 Next |
-| Support Vector Machine (SVM) | 🔜 Planned |
-| K-Nearest Neighbors (KNN) | 🔜 Planned |
-| Naive Bayes | 🔜 Planned |
-| XGBoost | 🔜 Planned |
-| LightGBM | 🔜 Planned |
-| CatBoost | 🔜 Planned |
-| Deep Learning | 🔜 Planned |
-
----
-
 # 🤝 Contributions
 
-Suggestions, improvements, and feedback are always welcome.
+Contributions, suggestions, and feedback are always welcome.
 
-If you find this repository helpful, consider giving it a ⭐.
+If you have ideas for improving the notebooks or adding new Machine Learning projects, feel free to open an issue or submit a pull request.
 
 ---
 
 # 📬 Contact
 
-**GitHub**
+### GitHub
 
 **https://github.com/Rimsha35**
 
+### LinkedIn
+
+**https://www.linkedin.com/in/rimsha-5362b9216/**
+
 ---
 
-## ⭐ If you like this repository, don't forget to star it!
+# ⭐ Support
+
+If you found this repository useful for learning Machine Learning, consider giving it a ⭐. It helps others discover the project and motivates future updates.
+
+Happy Learning! 🚀
